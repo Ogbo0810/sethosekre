@@ -1,0 +1,56 @@
+<!doctype html>
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <!-- displays site properly based on user's device -->
+        <link rel="stylesheet" href="style.css">
+        <!-- <script src="script.js"></script> -->
+        <link href='https://fonts.googleapis.com/css?family=Reenie Beanie' rel='stylesheet'>
+        <title>
+            happy 61 daddy!
+        </title>
+    </head>
+    <body class="body1">
+        <div id="maincontent1">
+            <button id="button1">
+                <svg xmlns="http://www.w3.org/2000/svg" x="0px" y="0px"
+                width="24" height="24"
+                viewBox="0 0 24 24"
+                style=" fill:#000000;"><path d="M 2 5 L 2 7 L 22 7 L 22 5 L 2 5 z M 2 11 L 2 13 L 22 13 L 22 11 L 2 11 z M 2 17 L 2 19 L 22 19 L 22 17 L 2 17 z"></path>
+                </svg>
+            </button>
+            <!-- <img src="IMG-20210304-WA0015.jpg" alt=""> -->
+        </div>
+        <div id="overlay1"></div>
+        <div id="popup1">
+            <div class="popupcontrols1">
+                <span id="popupclose1">X</span>
+            </div>
+            <div class="popupcontent1">
+                <a href="birthday-wishes.html">birthday wishes</a>
+                <a href="gallery.html">gallery</a>
+                <a href="my profile.html">my profile</a>
+            </div>
+        </div>
+        <div id="wish">happy 61 daddy!</div>
+
+        <script type="text/javascript">
+            // Initialize Variables
+            var closePopup = document.getElementById("popupclose1");
+            var overlay = document.getElementById("overlay1");
+            var popup = document.getElementById("popup1");
+            var button = document.getElementById("button1");
+            // Close Popup Event
+            closePopup.onclick = function() {
+              overlay.style.display = 'none';
+              popup.style.display = 'none';
+            };
+            // Show Overlay and Popup
+            button.onclick = function() {
+              overlay.style.display = 'block';
+              popup.style.display = 'block';
+            }
+        </script>
+    </body>
+</html>
